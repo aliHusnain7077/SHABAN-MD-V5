@@ -1,28 +1,30 @@
 {
-  "name": "SHABAN-MD",
-  "description": "Javascript WhatsApp bot made by 𝐌𝐑 𝐒𝐇𝐀𝐁𝐀𝐍",
-  "logo": "https://i.ibb.co/mCfPfmJL/shaban-md.jpg",
-  "keywords": ["SHABAN-MD"],
-  "success_url": "/",
-
-    "stack": "container",
-  "env": {
-    "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true,
-      "value": ""
-    },  
+    "bot-name": "SHABAN-MD",
+    "description": "Whiskey Sockets Baileys Whatsapp bot By Mr Shaban",
+    "logo": "https://i.ibb.co/qYtzFsVp/shaban-md.jpg",
+    "keywords": ["bot"],
+    "documentation-link": "https://pti-pair.onrender.com/",
+    "owner-verification": "talkdrovelover@gmail.com",
+  
+    "env": {
+      "SESSION_ID": {
+        "description": "Put your SESSION_ID here. Make sure it starts with SHABAN-MD~  or get session id from here,  https://pti-pair.onrender.com/",
+        "value":"",
+        "required": true
+        
+      },
+      "PREFIX": {
+        "description": "Bot command prefix, (e.g, . , ! @ etc",
+        "value":".",
+        "required": true
+        
+      },
     
+ 
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "SHABAN-MD︎"
-    },
-    
-    "MENU_IMAGE_URL": {
-      "description": "add url for mention reply and menu if want.",
-      "required": true,
-      "value": "https://i.ibb.co/j9G5tmNM/shaban-md.jpg"
+      "value": "𝚂ʜᴀʙᴀɴ-ᴍᴅ-𝚆.𝙰 𝙱𝙾𝚃"
     }, 
       
     "PREFIX": {
@@ -33,7 +35,7 @@
     
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
-      "required": false,
+      "required": true,
       "value": "public"
       
     },
@@ -43,12 +45,6 @@
       "description": "Make it true if want always online.",
       "required": true,
       "value": "false"  
-    },
-    
-    "AUTO_BIO": {
-      "description": "Make it true if want auto about changing.",
-      "required": true,
-      "value": "false"  
     },    
   
     "AUTO_VOICE": {
@@ -56,6 +52,12 @@
       "required": true,
       "value": "false"
     }, 
+    
+    "AUTO_BIO": {
+      "description": "Make it true if want auto about changing.",
+      "required": true,
+      "value": "false"  
+    },
 
     "AUTO_REPLY": {
       "description": "Make it true if you want automatic reply.",
@@ -70,14 +72,8 @@
     }, 
 
 
-    "AUTO_STATUS_SEEN": {
-      "description": "Make it true for automatic status seen.",
-      "required": true,
-      "value": "true"
-    }, 
-
     "AUTO_STATUS_REACT": {
-      "description": "make it true for automatic status reaction or like.",
+      "description": "Make it true for automatic status react & seen.",
       "required": true,
       "value": "true"
     }, 
@@ -91,53 +87,54 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SᴇᴇN YᴏᴜʀE SᴛᴀᴛᴜS JᴜsT NᴏW Sʜᴀʙᴀɴ-Mᴅ 𓅓*"
+      "value": "*𝑺𝒉𝒂𝒃𝒂𝒏 𝑴𝒅 𝑩𝒐𝒕 𝑽𝒊𝒆𝒘𝒆𝒅 𝒀𝒐𝒖𝒓 𝑺𝒕𝒂𝒕𝒖𝒔 🦄*"
    
      }, 
+    
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
+      "required": false,
+      "value": "𝐌𝐫 𝐒𝐡𝐚𝐛𝐚𝐧"
+}, 
+
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "923043788282"
+
+    }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "SHABAN-MD V5"
+      "value": "SHABAN-MD"
 
-     },
-     
-    "DELETE_LINK": {
+      }, 
+
+    "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
-      "value": "false"
-    }, 
-    
-    "ANTI_LINK": {
-      "description": "Make it true if you want bot auto kick member remove group link.",
-      "required": true,
-      "value": "false"
+      "value": "true"
+      
     },
     
-    "ADMIN_EVENTS": {
-      "description": "make it true if want know who promote or demote a member .",
-      "required": true,
+    "ANTI_BAD": {
+      "description": "Make it true if you want bot auto delete bad words.",
+      "required": false,
       "value": "false"
+    }, 
+
+     "DESCRIPTION": {
+      "description": "add caption for menu and other",
+      "required": false,
+      "value": "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sʜᴀʙᴀɴ*"
     },
 
-    "WELCOME": {
-      "description": "make it true if want goodbye and welcome message in groups.",
-      "required": true,
+      "DELETE_LINKS": {
+      "description": "remove links from group automatically without removing member",
+      "required": false,
       "value": "false"
     },
-     
-    "ANTI_CALL": {
-      "description": "Make it true if you want bot auto call rejected.",
-      "required": true,
-      "value": "false"
-      
-    }, 
-    
-    "ANTI_BAD_WORD": {
-      "description": "Make it true if you want bot auto delete bad words.",
-      "required": true,
-      "value": "false"
-    }, 
     
     "AUTO_RECORDING": {
       "description": "Make it true if you want auto recoding.",
@@ -157,25 +154,31 @@
       "value": "false"
     },
     
-    "CUSTOM_REACT": {
-      "description": "Make it true if you want custom reactions.",
+    "ADMIN_EVENTS": {
+      "description": "make it true if want know who promote or demote a member .",
+      "required": true,
+      "value": "false"
+    },
+
+    "WELCOME": {
+      "description": "make it true if want goodbye and welcome message in groups.",
+      "required": true,
+      "value": "false"
+    },
+    
+       "ANTI_CALL": {
+      "description": "Make it true if you want bot auto call rejected.",
       "required": true,
       "value": "false"
       
-    }, 
-    
-    "CUSTOM_REACT_EMOJIS": {
-      "description": "put here custom react react emojis.",
-      "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
-    }, 
+      },
     
     "ANTI_DEL_PATH": {
       "description": "change it to -same- if you want to resend deleted message in same chat othwise inbox",
       "required": true,
       "value": "inbox"
     },
-
+    
     "ANTI_DELETE": {
       "description": "set true for show deleted messages.",
       "required": true,
@@ -187,14 +190,5 @@
       "required": true,
       "value": "false"
     }
-
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
+  }
 }
-  
